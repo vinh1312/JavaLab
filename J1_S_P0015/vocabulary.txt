@@ -1,0 +1,30 @@
+29
+monkey: con khi
+book: sach
+sun: mat troi
+house: nha
+ball: qua bong
+apple: qua tao
+computer: may tinh
+car: xe hoi
+cat: meo
+bird: chim
+rabbit: tho
+pen: but
+bear: gau
+table: ban
+banana: qua chuoi
+chair: ghe
+tree: cay
+clock: dong ho
+pencil: but chi
+tiger: ho
+water: nuoc
+lion: su tu
+flower: hoa
+orange: qua cam
+moon: mat trang
+fish: ca
+spider: con nhen
+dog: cho
+elephant: voi

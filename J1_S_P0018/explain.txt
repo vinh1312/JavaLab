@@ -1,0 +1,15 @@
+email.matches("^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@" + "[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$"): Sử dụng phương thức matches của lớp String và một biểu thức chính quy (regular expression) để kiểm tra tính hợp lệ của địa chỉ email.
+
+^(?=.{1,64}@): Đây là một kiểm tra trước (lookahead) để đảm bảo rằng địa chỉ email chứa ít nhất 1 và tối đa 64 ký tự trước ký tự @.
+
+[A-Za-z0-9_-]+: Đây là một nhóm ký tự cho phép trong phần tên người dùng của địa chỉ email. Nó bao gồm các ký tự chữ cái (A-Z, a-z), chữ số (0-9) và dấu gạch dưới (_) và dấu gạch ngang (-).
+
+(\\.[A-Za-z0-9_-]+)*: Đây là một phần tùy chọn cho phép một hoặc nhiều nhóm ký tự giống như trên (với dấu chấm (.) phía trước) sau phần tên người dùng. Ví dụ: john.doe, john.doe.smith.
+
+@: Ký tự @ phân tách giữa phần tên người dùng và tên miền của địa chỉ email.
+
+[^-][A-Za-z0-9-]+: Đây là một nhóm ký tự cho phép trong phần tên miền của địa chỉ email. Nó bao gồm các ký tự chữ cái (A-Z, a-z), chữ số (0-9) và dấu gạch ngang (-). Tuy nhiên, không được bắt đầu bằng dấu gạch ngang (-).
+
+(\\.[A-Za-z0-9-]+)*: Đây là một phần tùy chọn cho phép một hoặc nhiều nhóm ký tự giống như trên (với dấu chấm (.) phía trước) sau phần tên miền. Ví dụ: .com, .co.uk.
+
+(\\.[A-Za-z]{2,})$: Đây là một phần bắt buộc đảm bảo rằng phần sau dấu chấm (.) cuối cùng trong địa chỉ email là một tên miền hợp lệ có ít nhất 2 ký tự chữ cái. Ví dụ: .com, .co.uk.
